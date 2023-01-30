@@ -1,5 +1,5 @@
 public class Card {
-    enum Rank {
+    public enum Rank {
         Ace,
         Two,
         Three,
@@ -14,14 +14,14 @@ public class Card {
         Queen,
         King
     }
-    enum Suit {
+    public enum Suit {
         Hearts,
         Diamonds,
         Clubs,
         Spades
     }
-    Rank rank;
-    Suit suit;
+    public Rank rank;
+    public Suit suit;
     public Card() {
         this.rank = (Rank) new Random().Next(0, 12);
         this.suit = (Suit) new Random().Next(0, 3);
